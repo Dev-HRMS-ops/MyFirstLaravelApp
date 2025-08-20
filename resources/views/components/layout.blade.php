@@ -11,10 +11,11 @@
 
 <body>
     <nav class="bg-green-800 text-white p-4 flex space-x-4 justify-center">
-        <x-mainmenuitem href="/">Home</x-mainmenuitem>
-        <x-mainmenuitem href="/about">About</x-mainmenuitem>
-        <x-mainmenuitem href="/services">Services</x-mainmenuitem>
-        <x-mainmenuitem href="/contact">Contact</x-mainmenuitem>
+        <x-mainmenuitem href="/" :active="request()->is('/')">Home</x-mainmenuitem>
+        <x-mainmenuitem href="/about" :active="request()->is('about')">About</x-mainmenuitem>
+        <x-mainmenuitem href="/services" :active="request()->is('services')">Services</x-mainmenuitem>
+        <x-mainmenuitem href="/contact" :active="request()->is('contact')">Contact</x-mainmenuitem>
+        <x-mainmenuitem href="/jobs" :active="request()->is('jobs')">Jobs</x-mainmenuitem>
     </nav>
 
     <main class="p-4">

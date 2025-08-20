@@ -1,3 +1,8 @@
 <x-layout>
-    this is the home page.
+    <p>
+        {{ $title }}
+    </p>
+    <p>
+        {{ $description }}
+    </p>
 </x-layout>
